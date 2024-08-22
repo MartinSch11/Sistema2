@@ -1,0 +1,3 @@
+com\mycompany\modelo\App.class
+com\mycompany\controlador\LoginVentanaController.class
+com\mycompany\controlador\AdminLoginVentanaController.class
