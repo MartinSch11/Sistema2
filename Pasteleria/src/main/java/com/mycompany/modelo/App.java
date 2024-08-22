@@ -1,5 +1,6 @@
 package com.mycompany.modelo;
 
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,7 +20,7 @@ public class App extends Application {
             primaryStage.setScene(scene);
             primaryStage.setTitle("Login Ventana");
             primaryStage.show();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
