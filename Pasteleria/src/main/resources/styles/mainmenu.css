@@ -5,3 +5,19 @@
 .mainFxmlClass {
 
 }
+
+.btnMainMenu{
+    -fx-background-color: none;
+    -fx-border-radius: 5px;
+    -fx-border-color: #B70505;
+    -fx-pref-width: 91px;
+    -fx-pref-height: 91px;
+    -fx-text: null;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+
+}
+
+
+.lblButtonMainMenu{
+    -fx-text-aligne: center;
+}

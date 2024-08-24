@@ -3,24 +3,95 @@
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.controlador.MainMenuController">
+<AnchorPane id="AnchorPane" prefHeight="647.0" prefWidth="916.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.controlador.MainMenuController">
     <stylesheets>
         <URL value="@/styles/mainmenu.css" />
     </stylesheets>
    <children>
-      <Pane prefHeight="400.0" prefWidth="600.0">
+      <Pane id="Pane" prefHeight="647.0" prefWidth="916.0" stylesheets="@../styles/mainmenu.css">
          <children>
-            <Button fx:id="btnEstadisticas" layoutX="62.0" layoutY="77.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" style="-fx-background-color: none; -fx-border-color: #B70505; -fx-border-width: 2px; -fx-border-radius: 5px;" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css" />
-            <Label layoutX="62.0" layoutY="173.0" style="-fx-background-color: none;" text="Estadísticas">
+            <Button fx:id="btnEstadisticas" layoutX="250.0" layoutY="173.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconEstadisticas.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label id="lblEstadisticas" layoutX="259.0" layoutY="275.0" styleClass="lblButtonMainMenu" stylesheets="@../styles/mainmenu.css" text="Estadísticas">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="btnPedidos" layoutX="182.0" layoutY="82.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css" />
+            <Button fx:id="btnPedidos" layoutX="404.0" layoutY="173.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css" />
+            <Button id="btnEventos" layoutX="544.0" layoutY="173.0" mnemonicParsing="false" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconEventos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label id="lblPedidos" layoutX="418.0" layoutY="275.0" styleClass="lblButtonMainMenu" stylesheets="@../styles/mainmenu.css" text="Pedidos">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label id="lblEventos" layoutX="563.0" layoutY="275.0" styleClass="lblButtonMainMenu" stylesheets="@../styles/mainmenu.css" text="Eventos">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="btnStock" layoutX="250.0" layoutY="324.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="100.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconStock.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="btnCaducidadInsumos" layoutX="400.0" layoutY="324.0" mnemonicParsing="false" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconCadInsumo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="btnProveedores" layoutX="544.0" layoutY="324.0" mnemonicParsing="false" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconProveedores.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label id="lblStock" layoutX="278.0" layoutY="430.0" styleClass="lblButtonMainMenu" stylesheets="@../styles/mainmenu.css" text="Stock">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label id="lblCaducidadInsumos" layoutX="372.0" layoutY="430.0" styleClass="lblButtonMainMenu" stylesheets="@../styles/mainmenu.css" text="Caducidad Insumos">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label id="lblProveedores" layoutX="544.0" layoutY="430.0" styleClass="lblButtonMainMenu" stylesheets="@../styles/mainmenu.css" text="Proveedores">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="647.0" prefWidth="173.0" style="-fx-background-color: #B70505;" stylesheets="@../styles/mainmenu.css" />
          </children>
       </Pane>
    </children>
