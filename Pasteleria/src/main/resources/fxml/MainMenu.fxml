@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.controlador.MainMenuController">
+    <stylesheets>
+        <URL value="@/styles/mainmenu.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnEstadisticas" layoutX="62.0" layoutY="77.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" style="-fx-background-color: none; -fx-border-color: #B70505; -fx-border-width: 2px; -fx-border-radius: 5px;" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css" />
+            <Label layoutX="62.0" layoutY="173.0" style="-fx-background-color: none;" text="Estadísticas">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPedidos" layoutX="182.0" layoutY="82.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
