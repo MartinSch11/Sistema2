@@ -23,6 +23,8 @@ public class App extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/MainMenu.fxml"));
     }
 
     public static void main(String[] args) {

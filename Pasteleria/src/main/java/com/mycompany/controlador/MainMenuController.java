@@ -11,22 +11,35 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
 
 /**
  * FXML Controller class
  *
  * @author lopez
  */
-public class MainMenuController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+
+public class MainMenuController {
+
+    @FXML
+    private Button btnEstadisticas;
+
+    @FXML
+    private Button btnProductos;
+    
+    @FXML
+    private Button btnEventos;
+
+    @FXML
+    private Button btnPedidos;
+    
+    @FXML
+    void showViewEventos(ActionEvent event){
+        
     }
 
-    
-    
 }
+

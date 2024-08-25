@@ -16,7 +16,7 @@
    <children>
       <Pane id="Pane" prefHeight="647.0" prefWidth="916.0" stylesheets="@../styles/mainmenu.css">
          <children>
-            <Button fx:id="btnEstadisticas" layoutX="250.0" layoutY="173.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+            <Button id="btnEstadisticas" fx:id="btnEstadisticas" layoutX="250.0" layoutY="173.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
                <graphic>
                   <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -29,8 +29,15 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="btnPedidos" layoutX="404.0" layoutY="173.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css" />
-            <Button id="btnEventos" layoutX="544.0" layoutY="173.0" mnemonicParsing="false" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+            <Button id="btnPedidos" fx:id="btnPedidos" layoutX="404.0" layoutY="173.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconPedidos.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="btnEventos" fx:id="btnEventos" layoutX="544.0" layoutY="173.0" mnemonicParsing="false" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
                <graphic>
                   <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -91,7 +98,33 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Pane prefHeight="647.0" prefWidth="173.0" style="-fx-background-color: #B70505;" stylesheets="@../styles/mainmenu.css" />
+            <Pane prefHeight="647.0" prefWidth="173.0" style="-fx-background-color: #B70505;" stylesheets="@../styles/mainmenu.css">
+               <children>
+                  <ImageView id="btnAyuda" accessibleRole="BUTTON" fitHeight="35.0" fitWidth="62.0" layoutX="14.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconAyuda.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="btnAvatarMainMenu" accessibleRole="BUTTON" fitHeight="85.0" fitWidth="90.0" layoutX="44.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/iconosPasteleria/iconAvatarEnBlanco.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Button id="btnProductos" fx:id="btnProductos" layoutX="250.0" layoutY="465.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="91.0" styleClass="btnMainMenu" stylesheets="@../styles/mainmenu.css">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/mycompany/imagenes/iconProductos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label id="lblStock" layoutX="264.0" layoutY="567.0" styleClass="lblButtonMainMenu" stylesheets="@../styles/mainmenu.css" text="Productos">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
